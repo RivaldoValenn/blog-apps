@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+textarea {
+    resize: none;
+}
+.dark-mode-toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin-left: px;
+    background-color: #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.toggle-icon {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode-toggle.dark .toggle-icon {
+    transform: translateX(30px);
+}
+
+.dark-mode-toggle.dark {
+    background-color: #333;
+}
+
